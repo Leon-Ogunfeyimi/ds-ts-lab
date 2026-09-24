@@ -21,7 +21,7 @@ const risotto: MenuItem = {
 const brownie: MenuItem = {
   id: 3,
   name: "Chocolate Brownie",
-  course: "desert", // fixed typo: was "desert"
+  course: "dessert", // fixed typo: was "desert"
   price: 6.0,
   nutrition: { calories: 450, allergens: ["milk", "eggs", "gluten"] },
 };
