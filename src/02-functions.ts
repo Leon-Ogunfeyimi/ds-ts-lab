@@ -75,3 +75,4 @@ console.log(addInterest(friends[0], "Politics"));
 
 
 console.log(addInterest(friends[1], "Politics")); 
+
