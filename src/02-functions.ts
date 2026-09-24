@@ -62,3 +62,16 @@ function findFriends(fs: Friend[], criterion: (f: Friend) => boolean) { // Infer
 
 console.log(findFriends(friends, (friend) => friend.name.startsWith('Pa')));
 console.log(findFriends(friends, (friend) => friend.age < 35));
+
+function addInterest(friend: Friend, interest: string) {
+  if (!friend.interests) {
+    friend.interests = [];
+  }
+  friend.interests.push(interest);
+  return friend.interests;
+}
+
+console.log(addInterest(friends[0], "Politics")); 
+
+
+console.log(addInterest(friends[1], "Politics")); 
