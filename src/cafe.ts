@@ -95,8 +95,8 @@ console.log(updateItem(soup, { price: 6.0, discountPercent: 10 }));
 console.log(kitchenTicket(brownie));
 console.log(allergyCard(brownie));
 
-kitchenTicket(brownie).name = "Something else"; 
+// kitchenTicket(brownie).name = "Something else"; // error: read-only
 
-console.log(describe(lunchCombo)); 
+console.log(describe(soup)); // was describe(lunchCombo) - not a MenuItem
 console.log(updateItem(soup, { price: 7.0 })); 
 console.log(firstMatch(menu, (i) => i.nutrition.calories < 300)); 
